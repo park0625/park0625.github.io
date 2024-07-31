@@ -13,7 +13,7 @@ body {
 
 
 .wrapper {
-    max-width: 800px;
+    max: width 800px;
     margin: 0 auto; 
     background-color: rgb(38, 141, 220); /* blue background for wrapper */
     padding: 30px;
@@ -27,15 +27,10 @@ body {
 }
 
 
-header {
-    margin-bottom: 10px;
-}
-
-
-
 .header image {
-    max-width: 0%;
-    margin: 50px ;
+    float: left;
+    max-width: 50%;
+    margin: 0px ;
     height: auto
     
 }
