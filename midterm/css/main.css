@@ -27,7 +27,7 @@ body {
 
     nav {
         width: 200px;
-        display: flex;
+        display: inline-flex
     }
 
     nav ul {
@@ -41,7 +41,7 @@ body {
     }
 
     nav a {
-        
+        display;
         color: black;
         text-decoration: none;
         padding: 5px 10px;
@@ -52,15 +52,7 @@ body {
         margin: auto;
     }
 
-    p {
-        text-align: justify;
-    }
 
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
 
     .article-img {
         float: left;
