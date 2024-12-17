@@ -1,0 +1,245 @@
+
+css reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    background-color: white;
+}
+
+/* Header */
+header {
+    background-color: #11253d;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 760px) {
+    .nav {
+        gap: 2rem;
+    }
+
+    .team {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #ffe6ac;
+}
+
+.welcome h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.welcome p {
+    font-size: 1rem;
+    color: #11253d;
+}
+
+/* About Us */
+.about {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Services Section */
+.services {
+    background-color: #c78c06;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.service img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.service .service-link {
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+/* Vision Section */
+.vision {
+    padding: 2rem 1rem;
+    background-color: #ffe6ac;
+    text-align: center;
+}
+
+.vision p {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #11253d;
+}
+
+/* Team Section */
+.team {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #11253d;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 1rem;
+    background-color: #c78c06;
+    color: white;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 0.75rem;
+    background-color: #11253d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #c78c06;
+}
+
+/* Media Queries */
+@media screen and (min-width: 760px) {
+    .nav {
+        gap: 2rem;
+    }
+
+    .team {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #11253d;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
