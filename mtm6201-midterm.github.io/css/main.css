@@ -1,0 +1,246 @@
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;  
+    font-display: Black;  
+    background-repeat: no-repeat;
+    /*background-position: 20px 40px */
+    background-size: cover;
+    
+}
+
+.nav{
+    color: black;
+}
+.welcome{
+    text-align:inherit;
+    
+}
+
+.homeimg{
+    padding-left: 60%;
+    
+}
+
+.h1img{
+    padding-right: 100%;
+    size: 50px;
+}
+.stack1 div {
+    display: block ;
+  }
+  .stack2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .stack3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .stack4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stack5 {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .stack5 div {
+    flex-grow: 1;
+  }
+  .stack6 div {
+    display: block;
+    width: 50%;
+  }
+  .stack7 div {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .stack7 div:last-child {
+    margin-bottom: 0;
+  }
+  .stack8 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .stack8 div {
+    flex-basis: calc(50% - 4px); /* Adjust for 2px margin on each side */
+    margin: 2px;
+  }
+  .stack9 div {
+    display: block;
+    flex-grow: 1;
+  }
+  
+  .stack9 div:nth-child(1) {
+    order: 2;
+    width: 50%;
+  }
+  
+  .stack9 div:nth-child(2) {
+    order: 3;
+    width: 25%;
+  }
+  
+  .stack9 div:nth-child(3) {
+    order: 1;
+    width: 75%;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0%;
+
+}
+
+@media screen and (min-width: 700px) {
+    body {
+     background-color: rgb(10, 119, 152);
+    }
+
+    
+
+    ul li {
+        display: inline;
+    }
+
+    article {
+        width: 50%;
+        float: left;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    body{
+        font-size: 0.8rem;
+    }
+
+    @media screen and (min-width: 800px)
+        body{
+            font-size: 1.5rem;
+    
+}
+    
+    /*background-position: 20px 40px */
+
+}
+
+.parent {
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr):
+    gap: 1rem;
+    grid-template-areas : 
+    "b1 b3 b3"
+    "b2 b3 b3"
+    "b2 b4 b5";
+}
+
+@media screen and (min-width: 700px;) {
+.parent {
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-areas: 
+   "b1 b1 b1 b2 b2"
+   "b1 b1 b1 b3 b4"
+   "b5 b6 b6 . b6 b6"
+}
+
+    
+}
+.block{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    columns: #fff;
+}
+
+.block-1 { background-color: cadetblue;}
+.block-2 { background-color: coral;}
+.block-3 { background-color: yellowgreen;}
+.block-4 { background-color: peru;}
+.block-5 { background-color: plum;}
+.block-6 { background-color: gray;}
+
+.block-1 { 
+     grid-area: b1;
+}
+
+.block-2{ grid-area: b2;}
+.block-3{ grid-area: b3;}
+.block-4{ grid-area: b4;}
+.block-5{ grid-area: b5;}
+.block-6{ grid-area: b6;}
+
+
+Grid website demo
+footer {
+    font-size: 0.75rem;
+}
+
+.wrapper {
+    background-color: #f3fbfc;
+}
+
+
+
+h1, nav, header, footer {
+    text-align: cent;
+}
+
+h1 {
+    grid-area: logo;
+}
+
+nav {
+    grid-area: nav;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    list-style: none;   
+}
+header {
+    grid-area: hdr;
+}
+.products {
+    grid-area: prod;
+}
+.services {
+    grid-area: serv;
+
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (min-width: 800px;) {
+    .wrapper {
+        width: 800px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "logo nav nav "
+        "hdr hdr hdr hdr"
+        "serv serv prod prod"
+        ". . . footer";
+    }
+}
+    
+
+
+      
