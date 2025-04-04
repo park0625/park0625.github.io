@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #12bfc5fd;
+}
+.navbar {
+    background-color: #00ffea;
+    list-style-type: none; /* This remove bullets point */
+    padding: 0;
+    margin: 0;
+    display: flex; /* This display items in a row */
+    justify-content: space-around; 
+    align-items: center; /* This center items */
+}
+.navbar-links {
+    display: none; /*This hide the links in the navbar */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+.navbar-links li {
+    margin: 10px 0;
+    text-align: center;
+}
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute; 
+    top: 40px; 
+    right: 30px; 
+    z-index: 1000; /* This makes the menu stays above other elements */
+}
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    padding-right: 30px; 
+    margin: 0; 
+}
+.navbar.active {
+    display: flex;
+}
+.navbar li {
+    margin: 10px 0;
+    text-align: center;
+}
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+}
+.navbar a:hover {
+    background-color: #f0f0f0;
+    color: #17a2b8;
+}
+.navbar2 {
+    display: flex;
+    flex-direction:row;
+    min-height:auto; 
+    background-color: #13f8f8; 
+    padding: 50px; 
+    box-sizing: border-box; 
+    border-radius: 10px; 
+    margin: 20px; 
+    width: auto; 
+    justify-content: space-between; 
+}
+.navbar2 li {
+    display: inline; /* list items are inline */
+    margin: 0 10px; /* space between items */
+    margin: 20px 0; /* Space between sections */
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    justify-self: start; 
+    flex: 1;     
+    min-width: auto;
+    max-width: auto;
+    
+}
+.navbar2 a {
+    text-decoration: none; /* Remove underline from links */
+    color: rgb(0, 0, 0); 
+    padding: 5px 10px; /* Add padding for better click area */
+}
+.btn-custom {
+    background-color: #0b3fec;
+    color: rgb(209, 73, 73);
+}
+.btn-custom:hover {
+    background-color: #1db9be;
+}
+.logo {
+    position: absolute; /* Position the logo absolutely */
+    top: 20px; /* Distance from the top of the screen */
+    left: 25px; 
+    z-index: 1000; /* makes the logo stay above other elements */
+}
+.logo img {
+    width: 45px; /* Adjust the size of the logo */
+    height: auto; 
+    display: block; /* make the image behaves like a block element */
+    margin: 0 auto; 
+    padding: 5px; 
+    border-radius: 50px; 
+    top: 80px; 
+    left: 60px; 
+    z-index: 1000; 
+    background-color: #fff; /* White background for the logo */
+
+}
+h1 {
+    text-align: center; /* Centers the text  */
+    margin-top: 20px; 
+    font-size: 2.5em; /*  Adjust the font size */
+    color: #333; 
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Full height of the viewport */
+    background-color: #13f8f8; /* light blue background for the wrapper */
+    padding: 50px; 
+    box-sizing: border-box; 
+    border-radius: 10px; 
+    margin: 20px; 
+}
+.wrapperc {
+    display:flex;
+    flex-direction:start;
+    min-height: 100%; 
+    background-color: #13f8f8; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    border-radius: 10px; 
+    margin: 20px; 
+    float: left; 
+    
+}
+@media (min-width: 1024px) {
+    .hamburger {
+        display: none;
+    }
+}
+  @media (min-width: 1024px) {
+    .navbar {
+        display: flex; /* Shows the navbar on desktop screens */
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+ .navbar li {
+        margin: 0 10px;
+    }
+}
+
+
+.welcome {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.welcome p {
+    font-size: 1.2em; 
+    color: #555; 
+    text-align: center; 
+    margin-bottom: 20px; 
+
+}
+
+section {
+    margin: 20px 0; /* Space between sections */
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 5px; /* Rounded corners for sections */
+    justify-self: start; 
+    flex: 1;       
+    min-width: 300px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+    
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    position: relative; 
+    z-index: 1; 
+    background: linear-gradient(to bottom right,white, #96fcff); /* Gradient background for sections */
+}
+
+.row{
+    display: flex; /* flexbox for layout */
+    justify-content: space-between; /*  items space evenly */
+    align-items: center; 
+    margin-bottom: 20px; /* Space below each row */
+}
+
+.row img {
+    max-width: 100%; /* make images respondsive */
+    height: auto; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.contact-form {
+    background: #18c7a1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form input[type="submit"] {
+    background: #0a9797;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: #27b0c2;
+}
+
+.footer {
+    background-color: #343a40; /* Dark background for the footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer .socialicons {
+    margin-bottom: 10px;
+}
+
+.footer .socialicons a {
+    color: rgb(211, 42, 20); /* Red color for the icons */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 20px; 
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+.footer .socialicons a:hover {
+    color: #17a2b8; 
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
