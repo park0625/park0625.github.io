@@ -13,8 +13,27 @@ body {
     justify-content: space-around; 
     align-items: center; /* This center items */
 }
+
+body a {
+    list-style-type: none; /* This remove bullets point */
+    text-decoration: none; /* This remove underline from links */
+    color: #050505; /* This set the color of the links */
+    padding: 20px  /* This add padding to the links */
+    display: block; /* This make the links behave like a block element */
+    
+
+}
+body li {
+    list-style: none; /* This remove bullets point */
+}
+
+body a:hover {
+    background-color: #f0f0f0; /* This change the background color on hover */
+    color: #e4140d; /* This change the text color on hover */
+}
 .navbar-links {
-    display: none; /*This hide the links in the navbar */
+    display: flex; /* This display items in a row */
+    justify-content: space-around; /* This space items evenly */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -70,44 +89,8 @@ body {
     background-color: #f0f0f0;
     color: #17a2b8;
 }
-.navbar2 {
-    display: flex;
-    flex-direction:row;
-    min-height:auto; 
-    background-color: #13f8f8; 
-    padding: 50px; 
-    box-sizing: border-box; 
-    border-radius: 10px; 
-    margin: 20px; 
-    width: auto; 
-    justify-content: space-between; 
-}
-.navbar2 li {
-    display: inline; /* list items are inline */
-    margin: 0 10px; /* space between items */
-    margin: 20px 0; /* Space between sections */
-    padding: 20px; 
-    background-color: #fff; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    justify-self: start; 
-    flex: 1;     
-    min-width: auto;
-    max-width: auto;
-    
-}
-.navbar2 a {
-    text-decoration: none; /* Remove underline from links */
-    color: rgb(0, 0, 0); 
-    padding: 5px 10px; /* Add padding for better click area */
-}
-.btn-custom {
-    background-color: #0b3fec;
-    color: rgb(209, 73, 73);
-}
-.btn-custom:hover {
-    background-color: #1db9be;
-}
+
+
 .logo {
     position: absolute; /* Position the logo absolutely */
     top: 20px; /* Distance from the top of the screen */
@@ -115,16 +98,17 @@ body {
     z-index: 1000; /* makes the logo stay above other elements */
 }
 .logo img {
-    width: 45px; /* Adjust the size of the logo */
+    width: 45px; /* Adjust the logo size o */
     height: auto; 
-    display: block; /* make the image behaves like a block element */
+    display: block; 
     margin: 0 auto; 
     padding: 5px; 
     border-radius: 50px; 
     top: 80px; 
     left: 60px; 
     z-index: 1000; 
-    background-color: #fff; /* White background for the logo */
+    background-color: #fff; 
+    animation: spin 1s ease-in-out; /* this make the logo spin*/
 
 }
 h1 {
@@ -132,7 +116,17 @@ h1 {
     margin-top: 20px; 
     font-size: 2.5em; /*  Adjust the font size */
     color: #333; 
+    z-index: 9999; /* makes the h1 stay above other elements */
 }
+
+.welcome li  {
+    list-style-type: none; /* Removes bullet points */
+    color: #070707;
+    background-color: #fff; /* White background for the list items */
+    padding: 10px; /* Padding for the list items */
+    margin: 10px 0; 
+    }
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -155,6 +149,57 @@ h1 {
     float: left; 
     
 }
+
+img {
+    max-width: 100%; 
+    height: auto; /* Maintain the aspect ratio */
+    display: block; 
+    border-radius: 5px; 
+}
+
+/* Overlay for pop-up */
+.image-popup-overlay {
+    display: flex; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 9999; /* makes it stay above other elements */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pop-up image styling */
+.image-popup-overlay img {
+    max-width: 90%; 
+    max-height: 90%; /* Ensure it fits within the viewport */
+    border-radius: 10px; /*  Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow */
+    animation: fadeIn 0.3s ease-in-out; /*  fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+ 
+
 @media (min-width: 1024px) {
     .hamburger {
         display: none;
@@ -162,7 +207,7 @@ h1 {
 }
   @media (min-width: 1024px) {
     .navbar {
-        display: flex; /* Shows the navbar on desktop screens */
+        display: flex; 
         flex-direction: row;
         position: static;
         background-color: transparent;
@@ -174,6 +219,12 @@ h1 {
     }
 }
 
+@media (max-width: 768px) {
+    #arts img {
+        width: 100%; /* Make the image take the full width of its container */
+        height: auto; /* Maintain the aspect ratio */
+    }
+}
 
 .welcome {
     text-align: center;
@@ -199,12 +250,40 @@ section {
     max-width: 800px; 
     margin: 0 auto; 
     box-sizing: border-box; 
-    
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    transition: all 0.3s ease; /*  transition for hover effects */
     position: relative; 
     z-index: 1; 
-    background: linear-gradient(to bottom right,white, #96fcff); /* Gradient background for sections */
+    
 }
+
+section a {
+    color: #000000; 
+    text-decoration: none; /* this remove underline from links */
+    font-weight: bold; /* this make the links bold */
+    transition: color 0.3s ease; 
+    padding: 5px; /* Padding for links */
+    border-radius: 5px; 
+    display: inline-block; /* Make the link behave like a block element */
+}
+
+section a:hover {
+    color: #fd0e22; /* this change the color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+    background-color: #e0e0e0; 
+}
+
+section li p {
+    margin: 0; 
+    
+    background-color: #10b0c5; 
+    padding: 10px; 
+}
+
+section:hover {
+    transform: scale(1.04); /* Slightly enlarge the section on hover */
+    box-shadow: 1 4px 10px rgb(255, 19, 11); /* Add shadow on hover */
+}
+
 
 .row{
     display: flex; /* flexbox for layout */
@@ -260,6 +339,15 @@ section {
 
 .footer .socialicons {
     margin-bottom: 10px;
+    display: flex; /* Flexbox for social icons */
+    justify-content: center; /* Center the icons */
+    align-items: center; /* Center the icons vertically */
+    list-style: none; /* Remove bullets from the list */
+    padding: 0; /* Remove padding from the list */
+    margin: 0; /* Remove margin from the list */
+    flex-wrap: wrap; /* Allow icons to wrap to the next line if needed */
+    gap: 10px; /* Space between icons */
+
 }
 
 .footer .socialicons a {
