@@ -119,6 +119,8 @@ h1 {
     z-index: 9999; /* makes the h1 stay above other elements */
 }
 
+
+
 .welcome li  {
     list-style-type: none; /* Removes bullet points */
     color: #070707;
@@ -130,12 +132,19 @@ h1 {
 .wrapper {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     min-height: 100%; /* Full height of the viewport */
     background-color: #13f8f8; /* light blue background for the wrapper */
     padding: 50px; 
     box-sizing: border-box; 
     border-radius: 10px; 
     margin: 20px; 
+    
+    
+    
+    align-items: relative; /* Center items vertically */
+    position: relative; /* Position relative for absolute positioning of child elements */
+    z-index: 1; /* Ensure it stays above other elements */  
 }
 .wrapperc {
     display:flex;
@@ -156,6 +165,105 @@ img {
     display: block; 
     border-radius: 5px; 
 }
+
+.box {
+    width: 100px; /* Set the width of each box */
+    height: 100px; /* Set the height of each box */
+    display: flex;
+    align-items: inline; /* Center items horizontally */
+    justify-content: auto; /* Center items vertically */
+    color: white; /* Text color */
+    font-weight: bold; /* Make text bold */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    margin: 10px; /* Space between boxes */
+    overflow: hidden; /* Ensure the image doesn't overflow the box */
+}
+.box img {
+    width: 100%; /* Make the image take the full width of the box */
+    height: 100%; /* Make the image take the full height of the box */
+    object-fit: cover; /* Ensure the image covers the box without distortion */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+}
+.box:hover img {
+    transform: scale(1.1); /* Scale the image on hover */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+    background-color: #fd0e22;
+}
+
+
+
+/* Add unique colors for each box */
+.box1  {
+    background-color: #ff6f61; /* Red */
+    position: absolute; /* Position relative for absolute positioning of child elements */
+    z-index: 1; /* Ensure it stays above other elements */
+    animation: spin 1s ease-in-out; /* this make the box spin*/
+    transition: transform 0.3s ease; /* Transition for hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    top: 60px; /* Adjust position to center the box */
+    left: 80px; /* Adjust position to center the box */
+
+}
+
+.box2 {
+    background-color: #6b5b95; /* Purple */
+    position: absolute;
+    z-index: 1; /* Ensure it stays above other elements */
+    animation: spin 1s ease-in-out; /* this make the box spin*/
+    transition: transform 0.3s ease; /* Transition for hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    top: 60px; /* Adjust position to center the box */
+    left: 80px; /* Adjust position to center the box */
+    
+}
+
+.box3 {
+    background-color: #88b04b; /* Green */
+    position: absolute;
+    z-index: 1; /* Ensure it stays above other elements */
+    animation: spin 1s ease-in-out; /* this make the box spin*/
+    transition: transform 0.3s ease; /* Transition for hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    bottom: 80px; /* Adjust position to center the box */
+    right: 100px; /* Adjust position to center the box */
+}
+
+.box4  {
+    background-color: #ff6f61; /* Red */
+    position: absolute; /* Position relative for absolute positioning of child elements */
+    z-index: 1; /* Ensure it stays above other elements */
+    animation: spin 1s ease-in-out; /* this make the box spin*/
+    transition: transform 0.3s ease; /* Transition for hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    top: 60px; /* Adjust position to center the box */
+    right: 30px; /* Adjust position to center the box */
+
+}
+
+.box5  {
+    background-color: #ff6f61; /* Red */
+    position: absolute; /* Position relative for absolute positioning of child elements */
+    z-index: 1; /* Ensure it stays above other elements */
+    animation: spin 1s ease-in-out; /* this make the box spin*/
+    transition: transform 0.3s ease; /* Transition for hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    top: 10px; /* Adjust position to center the box */
+    right: 20px; /* Adjust position to center the box */
+
+}
+.box6  {
+    background-color: #ff6f61; /* Red */
+    position: absolute; /* Position relative for absolute positioning of child elements */
+    z-index: 1; /* Ensure it stays above other elements */
+    animation: spin 1s ease-in-out; /* this make the box spin*/
+    transition: transform 0.3s ease; /* Transition for hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    top: 30px; /* Adjust position to center the box */
+    left: 40px; /* Adjust position to center the box */
+
+}
+
 
 /* Overlay for pop-up */
 .image-popup-overlay {
@@ -242,7 +350,7 @@ img {
 section {
     margin: 20px 0; /* Space between sections */
     padding: 20px; 
-    background-color: #fff; 
+    background-color: #f7feff; 
     border-radius: 5px; /* Rounded corners for sections */
     justify-self: start; 
     flex: 1;       
