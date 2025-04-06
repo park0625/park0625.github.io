@@ -1,8 +1,22 @@
 body {
     font-family: Arial, sans-serif; 
+    color: black; /*  text color black */
+    line-height: 1.5; /*  line height for better readability */
     margin: 0;
     padding: 0;
-    background-color: #12bfc5fd;
+    background-color: #12bfc5fd;  
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #000; /* makes the headings easy to see and read */
+}
+
+a {
+    color: #007bff; /*  link color */
+    text-decoration: none;
+}
+a:hover {
+    color: #0056b3; /*  hover color */
+    text-decoration: underline;
 }
 .navbar {
     background-color: #fff; /* White background for the navbar */
@@ -19,7 +33,7 @@ body a {
     list-style-type: none; /* This remove bullets point */
     text-decoration: none; /* This remove underline from links */
     color: #050505; /* This set the color of the links */
-    padding: 20px  /* This add padding to the links */
+    padding: 20px  
     display: block; /* This make the links behave like a block element */
     
 
@@ -104,7 +118,7 @@ body a:hover {
     z-index: 1000; /* makes the logo stay above other elements */
 }
 .logo img {
-    width: 45px; /* Adjust the logo size o */
+    width: 45px; /* Adjust the logo size  */
     height: auto; 
     display: block; 
     margin: 0 auto; 
@@ -145,12 +159,9 @@ h1 {
     box-sizing: border-box; 
     border-radius: 10px; 
     margin: 20px; 
-    
-    
-    
     align-items: relative; /* Center items vertically */
-    position: relative; /* Position relative for absolute positioning of child elements */
-    z-index: 1; /* Ensure it stays above other elements */  
+    position: relative; 
+    z-index: 1;   
 }
 .wrapperc {
     display:flex;
@@ -173,23 +184,23 @@ img {
 }
 
 .box {
-    width: 100px; /* Set the width of each box */
-    height: 100px; /* Set the height of each box */
+    width: 100px; /* width of each box */
+    height: 100px; 
     display: flex;
-    align-items: inline; /* Center items horizontally */
-    justify-content: auto; /* Center items vertically */
+    align-items: inline; 
+    justify-content: auto; 
     color: white; /* Text color */
-    font-weight: bold; /* Make text bold */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    font-weight: bold; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 10px; /* Space between boxes */
-    overflow: hidden; /* Ensure the image doesn't overflow the box */
+    overflow: hidden; /* makes the image stay in the box */
 }
 .box img {
-    width: 100%; /* Make the image take the full width of the box */
-    height: 100%; /* Make the image take the full height of the box */
-    object-fit: cover; /* Ensure the image covers the box without distortion */
-    transition: transform 0.3s ease; /* Transition for hover effect */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* makes the image cover the box  */
+    transition: transform 0.3s ease; 
 }
 .box:hover img {
     transform: scale(1.1); /* Scale the image on hover */
@@ -201,77 +212,76 @@ img {
 
 /* Add unique colors for each box */
 .box1  {
-    background-color: #ff6f61; /* Red */
-    position: absolute; /* Position relative for absolute positioning of child elements */
-    z-index: 1; /* Ensure it stays above other elements */
+    background-color: #ff6f61; 
+    position: absolute; /* relative for absolute position */
+    z-index: 1; 
     animation: spin 1s ease-in-out; /* this make the box spin*/
-    transition: transform 0.3s ease; /* Transition for hover effect */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    top: 60px; /* Adjust position to center the box */
-    left: 80px; /* Adjust position to center the box */
+    transition: transform 0.3s ease; 
+    cursor: pointer; /* cursor to pointer on hover */
+    top: 60px; 
+    left: 80px; 
 
 }
 
 .box2 {
-    background-color: #6b5b95; /* Purple */
+    background-color: #6b5b95; 
     position: absolute;
-    z-index: 1; /* Ensure it stays above other elements */
+    z-index: 1; /* make it stays above other elements */
     animation: spin 1s ease-in-out; /* this make the box spin*/
-    transition: transform 0.3s ease; /* Transition for hover effect */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    top: 60px; /* Adjust position to center the box */
-    left: 80px; /* Adjust position to center the box */
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+    top: 60px;
+    left: 80px; 
     
 }
 
 .box3 {
-    background-color: #88b04b; /* Green */
+    background-color: #88b04b; 
     position: absolute;
-    z-index: 1; /* Ensure it stays above other elements */
-    animation: spin 1s ease-in-out; /* this make the box spin*/
-    transition: transform 0.3s ease; /* Transition for hover effect */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    bottom: 80px; /* Adjust position to center the box */
-    right: 100px; /* Adjust position to center the box */
+    z-index: 1; 
+    animation: spin 1s ease-in-out; 
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+    bottom: 80px; 
+    right: 100px; 
 }
 
 .box4  {
-    background-color: #ff6f61; /* Red */
-    position: absolute; /* Position relative for absolute positioning of child elements */
-    z-index: 1; /* Ensure it stays above other elements */
+    background-color: #ff6f61; 
+    position: absolute; 
+    z-index: 1; 
     animation: spin 1s ease-in-out; /* this make the box spin*/
     transition: transform 0.3s ease; /* Transition for hover effect */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    cursor: pointer; 
     top: 60px; /* Adjust position to center the box */
-    right: 30px; /* Adjust position to center the box */
+    right: 30px; 
 
 }
 
 .box5  {
-    background-color: #ff6f61; /* Red */
-    position: absolute; /* Position relative for absolute positioning of child elements */
-    z-index: 1; /* Ensure it stays above other elements */
+    background-color: #ff6f61; 
+    position: absolute; 
+    z-index: 1; /* make it stays above other elements */
     animation: spin 1s ease-in-out; /* this make the box spin*/
-    transition: transform 0.3s ease; /* Transition for hover effect */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    top: 10px; /* Adjust position to center the box */
-    right: 20px; /* Adjust position to center the box */
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+    top: 10px; /
+    right: 20px; 
 
 }
 .box6  {
-    background-color: #ff6f61; /* Red */
-    position: absolute; /* Position relative for absolute positioning of child elements */
-    z-index: 1; /* Ensure it stays above other elements */
+    background-color: #ff6f61; 
+    position: absolute; 
+    z-index: 1; 
     animation: spin 1s ease-in-out; /* this make the box spin*/
     transition: transform 0.3s ease; /* Transition for hover effect */
     cursor: pointer; /* Change cursor to pointer on hover */
-    top: 30px; /* Adjust position to center the box */
+    top: 30px; 
     left: 40px; /* Adjust position to center the box */
 
 }
 
 
-/* Overlay for pop-up */
 .image-popup-overlay {
     display: flex; 
     position: fixed;
@@ -285,10 +295,10 @@ img {
     align-items: center;
 }
 
-/* Pop-up image styling */
+
 .image-popup-overlay img {
     max-width: 90%; 
-    max-height: 90%; /* Ensure it fits within the viewport */
+    max-height: 90%; 
     border-radius: 10px; /*  Add rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow */
     animation: fadeIn 0.3s ease-in-out; /*  fade-in animation */
@@ -366,22 +376,23 @@ section {
     box-sizing: border-box; 
     transition: all 0.3s ease; /*  transition for hover effects */
     position: relative; 
-    z-index: 1; 
+    z-index: 1;
+    text-align: center; 
     
 }
 
 section a {
     color: #000000; 
-    text-decoration: none; /* this remove underline from links */
-    font-weight: bold; /* this make the links bold */
+    text-decoration: none; 
+    font-weight: bold; 
     transition: color 0.3s ease; 
     padding: 5px; /* Padding for links */
     border-radius: 5px; 
-    display: inline-block; /* Make the link behave like a block element */
+    display: inline-block; 
 }
 
 section a:hover {
-    color: #fd0e22; /* this change the color on hover */
+    color: #fd0e22; 
     text-decoration: underline; /* Adds underline on hover */
     background-color: #e0e0e0; 
 }
@@ -400,10 +411,10 @@ section:hover {
 
 
 .row{
-    display: flex; /* flexbox for layout */
-    justify-content: space-between; /*  items space evenly */
+    display: flex; 
+    justify-content: space-between; 
     align-items: center; 
-    margin-bottom: 20px; /* Space below each row */
+    margin-bottom: 20px; /
 }
 
 .row img {
@@ -411,6 +422,20 @@ section:hover {
     height: auto; 
     border-radius: 5px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+img, picture {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    border-radius: 5px; 
+}
+
+picture {
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form {
@@ -443,6 +468,29 @@ section:hover {
     background: #27b0c2;
 }
 
+button, a {
+    outline: none;
+}
+
+button:focus, a:focus {
+    outline: 2px solid #007bff; /* Add a visible focus indicator */
+    outline-offset: 2px;
+}
+
+button:hover {
+    animation: animate__pulse 1s infinite;
+}
+:root {
+    --bs-primary: #ff6f61;
+    --bs-secondary: #6b5b95; 
+    --bs-success: #88b04b; 
+    --bs-info: #92a8d1; 
+    --bs-warning: #ffcc5c; 
+    --bs-danger: #f7cac9;
+    --bs-light: #f8f9fa; 
+    --bs-dark: #343a40; 
+}
+
 .footer {
     background-color: #343a40; /* Dark background for the footer */
     color: white;
@@ -454,19 +502,19 @@ section:hover {
 .footer .socialicons {
     margin-bottom: 10px;
     display: flex; /* Flexbox for social icons */
-    justify-content: center; /* Center the icons */
-    align-items: center; /* Center the icons vertically */
+    justify-content: center; 
+    align-items: center; 
     list-style: none; /* Remove bullets from the list */
-    padding: 0; /* Remove padding from the list */
-    margin: 0; /* Remove margin from the list */
+    padding: 0; 
+    margin: 0; 
     flex-wrap: wrap; /* Allow icons to wrap to the next line if needed */
     gap: 10px; /* Space between icons */
 
 }
 
 .footer .socialicons a {
-    color: rgb(211, 42, 20); /* Red color for the icons */
-    margin: 0 10px; /* Spacing between icons */
+    color: rgb(211, 42, 20);
+    margin: 0 10px; 
     font-size: 20px; 
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease;
@@ -479,3 +527,5 @@ section:hover {
     margin: 0;
     font-size: 14px;
 }
+
+
