@@ -401,11 +401,25 @@ section a:hover {
     background-color: #e0e0e0; 
 }
 
-section li p {
+section h2 {
+    font-size: 1.8em; /* Adjust the font size */
+    color: #333; 
+    margin: 20px; 
+    text-align: center;
+    background: linear-gradient(to right, #c1f8da, #d1c5c8); /* Gradient background for headings */
+    padding: 10px;
+    ;
+}
+
+section  p {
     margin: 0; 
-    
-    background-color: #10b0c5; 
+    background-color: #deebf1; 
     padding: 10px; 
+}
+
+section li p {
+    
+    background: linear-gradient(to right, #c2e497, #35fafa); /* Gradient background for headings */
 }
 
 section:hover {
