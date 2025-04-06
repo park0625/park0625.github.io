@@ -5,13 +5,14 @@ body {
     background-color: #12bfc5fd;
 }
 .navbar {
-    background-color: #00ffea;
+    background-color: #fff; /* White background for the navbar */
     list-style-type: none; /* This remove bullets point */
     padding: 0;
     margin: 0;
     display: flex; /* This display items in a row */
     justify-content: space-around; 
     align-items: center; /* This center items */
+    ;
 }
 
 body a {
@@ -80,13 +81,18 @@ body a:hover {
     text-align: center;
 }
 .navbar a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 20px;
-    display: block;
+        padding: 10px;
+        display: block;
+        color: #000000; 
+        text-decoration: none; /* this remove underline from links */
+        font-weight: bold; /* this make the links bold */
+        transition: color 0.3s ease; 
+        
+        border-radius: 5px; 
+        display: inline-block; /* Make the link behave like a block element */
 }
 .navbar a:hover {
-    background-color: #f0f0f0;
+    background-color: #70ffc4;
     color: #17a2b8;
 }
 
@@ -132,10 +138,10 @@ h1 {
 .wrapper {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     min-height: 100%; /* Full height of the viewport */
     background-color: #13f8f8; /* light blue background for the wrapper */
-    padding: 50px; 
+    padding: 70px; 
     box-sizing: border-box; 
     border-radius: 10px; 
     margin: 20px; 
