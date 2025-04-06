@@ -155,7 +155,7 @@ h1 {
     flex-wrap: wrap;
     min-height: 100%; /* Full height of the viewport */
     background-color: #13f8f8; /* light blue background for the wrapper */
-    padding: 80px; 
+    padding: 65px; 
     box-sizing: border-box; 
     border-radius: 10px; 
     align-items: relative; /* Center items vertically */
