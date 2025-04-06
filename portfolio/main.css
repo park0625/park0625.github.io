@@ -85,7 +85,8 @@ body a:hover {
     border-radius: 2px;
     transition: all 0.3s ease;
     padding-right: 30px; 
-    margin: 0; 
+    margin: 0;
+    z-index: 1000; /* makes the hamburger icon stay above other elements */ 
 }
 .navbar.active {
     display: flex;
@@ -116,11 +117,14 @@ body a:hover {
     top: 20px; /* Distance from the top of the screen */
     left: 25px; 
     z-index: 1000; /* makes the logo stay above other elements */
+    display: flex; /* This display items in a row */
+    flex-wrap: wrap;
 }
 .logo img {
     width: 45px; /* Adjust the logo size  */
     height: auto; 
-    display: block; 
+    display: flex; 
+    flex-wrap: wrap;
     margin: 0 auto; 
     padding: 5px; 
     border-radius: 50px; 
@@ -155,12 +159,13 @@ h1 {
     flex-wrap: wrap;
     min-height: 100%; /* Full height of the viewport */
     background-color: #13f8f8; /* light blue background for the wrapper */
-    padding: 40px; 
+    padding: 20px; /* Padding for the wrapper */
     box-sizing: border-box; 
     border-radius: 10px; 
     align-items: relative; /* Center items vertically */
     position: relative; 
-    z-index: 1;   
+    z-index: 1;
+     
 }
 .wrapperc {
     display:flex;
