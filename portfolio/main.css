@@ -75,7 +75,7 @@ body a:hover {
     position: absolute; 
     top: 40px; 
     right: 30px; 
-    z-index: 1000; /* This makes the menu stays above other elements */
+    
 }
 .hamburger span {
     display: block;
@@ -155,7 +155,7 @@ h1 {
     flex-wrap: wrap;
     min-height: 100%; /* Full height of the viewport */
     background-color: #13f8f8; /* light blue background for the wrapper */
-    padding: 60px; 
+    padding: 80px; 
     box-sizing: border-box; 
     border-radius: 10px; 
     align-items: relative; /* Center items vertically */
@@ -365,7 +365,7 @@ img {
 section {
     margin: 20px 0; /* Space between sections */
     padding: 20px; 
-    background-color: #f7feff; 
+    background-color: #40c3d4; 
     border-radius: 5px; /* Rounded corners for sections */
     justify-self: start; 
     flex: 1;       
