@@ -155,10 +155,9 @@ h1 {
     flex-wrap: wrap;
     min-height: 100%; /* Full height of the viewport */
     background-color: #13f8f8; /* light blue background for the wrapper */
-    padding: 20px; 
+    padding: 60px; 
     box-sizing: border-box; 
     border-radius: 10px; 
-    margin: 20px; 
     align-items: relative; /* Center items vertically */
     position: relative; 
     z-index: 1;   
@@ -479,6 +478,7 @@ button:focus, a:focus {
 
 button:hover {
     animation: animate__pulse 1s infinite;
+    background-color: #70ffc4;
 }
 :root {
     --bs-primary: #ff6f61;
