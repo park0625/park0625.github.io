@@ -18,7 +18,7 @@
  Making sure the site looked good on all screen sizes was something that gived me a hard time throughout the whole development. I used Bootstrap's grid system and media queries to create a responsive layout.
  Making the site accessible to users with disabilities was another big challenge too but I was able to used semantic HTML, ARIA roles, and skip links to improve accessibility. I also ensured proper color contrast and keyboard navigation.
 
- Adding interactive elements like a hamburger menu, making the site logo spins after refresh and etc was very hard to be honest. I used some css transition, Bootstrap for prebuilt components and javascript for a clickible hamburger menu.
+ Adding interactive elements like a hamburger menu, making the site logo spins after refresh and etc was very hard to be honest. I used some css transition and Bootstrap for prebuilt components.
 
  Lessons Learned
  I gained a deeper understanding of creating layouts that adapt to different screen sizes using Flexbox, Grid, and media queries. I also learned how to make a site accessible by using semantic HTML, ARIA roles, and proper focus management.

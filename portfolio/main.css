@@ -4,10 +4,16 @@ body {
     line-height: 1.5; /*  line height for better readability */
     margin: 0;
     padding: 0;
-    background-color: #12bfc5fd;  
+    background-color: #12bfc5fd; 
+
 }
-h1, h2, h3, h4, h5, h6 {
-    color: #000; /* makes the headings easy to see and read */
+.animate__animated.animate__fadeInDown {
+    text-align: center; /* Centers the text */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; /* Centers vertically */
+    
+
 }
 
 a {
@@ -33,8 +39,7 @@ body a {
     list-style-type: none; /* This remove bullets point */
     text-decoration: none; /* This remove underline from links */
     color: #050505; /* This set the color of the links */
-    padding: 20px  
-    display: block; /* This make the links behave like a block element */
+    display: block; 
     
 
 }
@@ -104,10 +109,10 @@ body a:hover {
         transition: color 0.3s ease; 
         
         border-radius: 5px; 
-        display: inline-block; /* Make the link behave like a block element */
+        display: inline-block; /* Makes the link behave like a block element */
 }
 .navbar a:hover {
-    background-color: #70ffc4;
+    background-color: #70ffc4;/* this change the background color of the links on hover*/
     color: #17a2b8;
 }
 
@@ -135,41 +140,22 @@ body a:hover {
     animation: spin 1s ease-in-out; /* this make the logo spin*/
 
 }
-h1 {
-    text-align: center; /* Centers the text  */
-    margin-top: 20px; 
-    font-size: 2.5em; /*  Adjust the font size */
-    color: #333; 
-    z-index: 9999; /* makes the h1 stay above other elements */
-}
-
-
-
-.welcome li  {
-    list-style-type: none; /* Removes bullet points */
-    color: #070707;
-    background-color: #fff; /* White background for the list items */
-    padding: 10px; /* Padding for the list items */
-    margin: 10px 0; 
-    }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    min-height: 100%; /* Full height of the viewport */
+    min-height: 100%; /* Full height of viewport */
     background-color: #13f8f8; /* light blue background for the wrapper */
     padding: 20px; /* Padding for the wrapper */
     box-sizing: border-box; 
     border-radius: 10px; 
-    align-items: relative; /* Center items vertically */
     position: relative; 
     z-index: 1;
      
 }
 .wrapperc {
     display:flex;
-    flex-direction:start;
     min-height: 100%; 
     background-color: #13f8f8; 
     padding: 20px; 
@@ -191,8 +177,6 @@ img {
     width: 100px; /* width of each box */
     height: 100px; 
     display: flex;
-    align-items: inline; 
-    justify-content: auto; 
     color: white; /* Text color */
     font-weight: bold; 
     border-radius: 10px; 
@@ -213,47 +197,43 @@ img {
 }
 
 
-
-/* Add unique colors for each box */
 .box1  {
     background-color: #ff6f61; 
-    position: absolute; /* relative for absolute position */
-    z-index: 1; 
+    position: absolute; 
     animation: spin 1s ease-in-out; /* this make the box spin*/
     transition: transform 0.3s ease; 
-    cursor: pointer; /* cursor to pointer on hover */
+    cursor: pointer; 
     top: 60px; 
-    left: 80px; 
+    right: 80px; 
 
 }
 
 .box2 {
     background-color: #6b5b95; 
     position: absolute;
-    z-index: 1; /* make it stays above other elements */
     animation: spin 1s ease-in-out; /* this make the box spin*/
     transition: transform 0.3s ease; 
     cursor: pointer; 
     top: 60px;
-    left: 80px; 
+    left: 10px; 
+    
     
 }
 
 .box3 {
     background-color: #88b04b; 
     position: absolute;
-    z-index: 1; 
     animation: spin 1s ease-in-out; 
     transition: transform 0.3s ease; 
     cursor: pointer; 
-    bottom: 80px; 
-    right: 100px; 
+    bottom: 1px; 
+    left: 60px; 
+
 }
 
 .box4  {
     background-color: #ff6f61; 
     position: absolute; 
-    z-index: 1; 
     animation: spin 1s ease-in-out; /* this make the box spin*/
     transition: transform 0.3s ease; /* Transition for hover effect */
     cursor: pointer; 
@@ -261,30 +241,6 @@ img {
     right: 30px; 
 
 }
-
-.box5  {
-    background-color: #ff6f61; 
-    position: absolute; 
-    z-index: 1; /* make it stays above other elements */
-    animation: spin 1s ease-in-out; /* this make the box spin*/
-    transition: transform 0.3s ease; 
-    cursor: pointer; 
-    top: 10px; /
-    right: 20px; 
-
-}
-.box6  {
-    background-color: #ff6f61; 
-    position: absolute; 
-    z-index: 1; 
-    animation: spin 1s ease-in-out; /* this make the box spin*/
-    transition: transform 0.3s ease; /* Transition for hover effect */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    top: 30px; 
-    left: 40px; /* Adjust position to center the box */
-
-}
-
 
 .image-popup-overlay {
     display: flex; 
@@ -308,10 +264,10 @@ img {
     animation: fadeIn 0.3s ease-in-out; /*  fade-in animation */
 }
 
-/* Fade-in animation */
+
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 0;  /* fadein animation */
     }
     to {
         opacity: 1;
@@ -320,7 +276,7 @@ img {
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(0deg); /* Spin animation */
     }
     100% {
         transform: rotate(360deg);
@@ -328,9 +284,9 @@ img {
 }
  
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) {  
     .hamburger {
-        display: none;
+        display: none; /* media query hides the hamburger menu on desktop screen */
     }
 }
   @media (min-width: 1024px) {
@@ -349,22 +305,9 @@ img {
 
 @media (max-width: 768px) {
     #arts img {
-        width: 100%; /* Make the image take the full width of its container */
+        width: 100%; /* Makes the image take the full width of the container */
         height: auto; /* Maintain the aspect ratio */
     }
-}
-
-.welcome {
-    text-align: center;
-    margin-bottom: 20px; 
-}
-
-.welcome p {
-    font-size: 1.2em; 
-    color: #555; 
-    text-align: center; 
-    margin-bottom: 20px; 
-
 }
 
 section {
@@ -389,7 +332,7 @@ section a {
     color: #000000; 
     text-decoration: none; 
     font-weight: bold; 
-    transition: color 0.3s ease; 
+    transition: 0.3s ease; 
     padding: 5px; /* Padding for links */
     border-radius: 5px; 
     display: inline-block; 
@@ -424,7 +367,7 @@ section li p {
 
 section:hover {
     transform: scale(1.04); /* Slightly enlarge the section on hover */
-    box-shadow: 1 4px 10px rgb(255, 19, 11); /* Add shadow on hover */
+    
 }
 
 
@@ -432,7 +375,7 @@ section:hover {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    margin-bottom: 20px; /
+    margin-bottom: 20px; 
 }
 
 .row img {
@@ -442,30 +385,15 @@ section:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-img, picture {
-    max-width: 100%; 
-    height: auto;
-    display: block; 
-    border-radius: 5px; 
-}
-
-picture {
-    display: inline-block;
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form {
-    background: #18c7a1;
+#contact-form {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -473,18 +401,13 @@ picture {
     border-radius: 4px;
 }
 
-.contact-form input[type="submit"] {
+#contact-form input[type="submit"] {
     background: #0a9797;
     color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
+    padding: 15px;
     cursor: pointer;
 }
 
-.contact-form input[type="submit"]:hover {
-    background: #27b0c2;
-}
 
 button, a {
     outline: none;
@@ -500,12 +423,12 @@ button:hover {
     background-color: #70ffc4;
 }
 :root {
-    --bs-primary: #ff6f61;
-    --bs-secondary: #6b5b95; 
-    --bs-success: #88b04b; 
+    --bs-primary: #61ffd7;
+    --bs-secondary: #0f6277; 
+    --bs-success: #08e025; 
     --bs-info: #92a8d1; 
-    --bs-warning: #ffcc5c; 
-    --bs-danger: #f7cac9;
+    --bs-warning: #e20b0b; 
+    --bs-danger: #f70501;
     --bs-light: #f8f9fa; 
     --bs-dark: #343a40; 
 }
